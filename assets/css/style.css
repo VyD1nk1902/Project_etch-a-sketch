@@ -24,18 +24,19 @@ body {
   grid-template-rows: repeat(16, 1fr);
   height: 70vmin;
   width: 70vmin;
-  border: 1px solid black;
+  border: 5px solid #5c2e2e;
 }
 
 .grid-square {
-  border: 1px solid black;
+  border: 1px solid #cccccc;
   background-color: white;
   -webkit-user-drag: none;
   user-select: none;
+  transition: background-color 0.2s;
 }
 
 .grid-square.active {
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 .btn-group {
