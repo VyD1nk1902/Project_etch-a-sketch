@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  height: 80vmin;
+  width: 80vmin;
+}
+
+.grid-container div {
+  border: 1px solid black;
+}
+
+.grid-container div:hover {
+  background-color: black;
+}
