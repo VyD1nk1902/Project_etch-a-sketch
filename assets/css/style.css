@@ -1,17 +1,30 @@
 body {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   user-select: none;
+  margin: 0;
+  background-color: #f9d4d4;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100vh;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  height: 80vmin;
-  width: 80vmin;
+  height: 70vmin;
+  width: 70vmin;
+  border: 1px solid black;
 }
 
 .grid-square {
@@ -25,8 +38,18 @@ body {
   background-color: black;
 }
 
-.grid-btn {
-  width: 200px;
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  width: 150px;
   margin: auto;
   padding: 10px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+  color: #4b0082;
 }
