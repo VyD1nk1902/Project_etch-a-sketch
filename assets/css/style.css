@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  user-select: none;
 }
 
 .grid-container {
@@ -16,6 +17,8 @@ body {
 .grid-square {
   border: 1px solid black;
   background-color: white;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .grid-square.active {
